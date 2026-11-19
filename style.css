@@ -1,0 +1,245 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #2d0235;
+}
+
+header {
+    background-color: #b94e98;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2 {
+    color: #651070;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #020918;
+}
+
+
+#profile-header {
+    border-bottom: 4px solid #9b337a;
+}
+
+
+.cv-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cv-section {
+    background-color: #fdf2f7;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.job-title {
+    color: #641054;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.skills-list li {
+    background-color: #f2e6f8;
+    color: #641054;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #dcc1ed;
+    font-weight: 500;
+}
+
+header nav a {
+    color: #641054;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+header nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.cv-section:hover {
+    box-shadow: 0 6px 15px rgba(66, 14, 55, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .cv-section {
+        width: 92%;
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    header {
+        padding: 25px 10px;
+    }
+
+    header nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
+
+
+/*****/
+
+button {
+    background-color: #b94e98;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #651070;
+}
+
+.header-buttons {
+    margin-top: 20px;
+}
+
+.header-buttons button {
+    background-color: #651070;
+}
+
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #38203b;
+}
+
+body.dark-mode .cv-section {
+    background-color: #242424;
+    border-color: #444444;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode .skills-list li {
+    background-color: #452b48;
+    color: #ffffff;
+    border-color: #765478;
+}
+
+
+
+
+#moreText[hidden] {
+    display: none;
+}
+
+
+
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid #dcc1ed;
+}
+
+body.dark-mode .project-card {
+    background-color: #303030;
+    border-color: #555555;
+}
+
+
+
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+
+@media print {
+
+    button,
+    nav,
+    .filters,
+    .header-buttons {
+        display: none !important;
+    }
+
+    body,
+    header,
+    .cv-section,
+    .project-card,
+    .skills-list li {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+
+    body * {
+        color: black !important;
+    }
+
+    #moreText[hidden] {
+        display: block !important;
+    }
+
+    .cv-section,
+    .project-card {
+        break-inside: avoid;
+    }
+
+    .cv-section {
+        border: none !important;
+        margin: 10px 0;
+        padding: 15px;
+        width: auto;
+    }
+
+    .cv-container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
